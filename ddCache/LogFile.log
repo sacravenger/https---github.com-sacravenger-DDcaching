@@ -1,0 +1,501 @@
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 13:55:59.279000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60611/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60611/hub/session/0b8c6493-9311-4193-8efb-56e6215beb30/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "0b8c6493-9311-4193-8efb-56e6215beb30"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60611/hub/session/0b8c6493-9311-4193-8efb-56e6215beb30 {"sessionId": "0b8c6493-9311-4193-8efb-56e6215beb30"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60650/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60650/hub/session/ffd2694d-5652-460e-bc9a-90dfd9847b03/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "ffd2694d-5652-460e-bc9a-90dfd9847b03"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60650/hub/session/ffd2694d-5652-460e-bc9a-90dfd9847b03 {"sessionId": "ffd2694d-5652-460e-bc9a-90dfd9847b03"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60686/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60686/hub/session/bc86f0a2-ed08-4050-9f66-5c89ef12da55/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "bc86f0a2-ed08-4050-9f66-5c89ef12da55"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60686/hub/session/bc86f0a2-ed08-4050-9f66-5c89ef12da55 {"sessionId": "bc86f0a2-ed08-4050-9f66-5c89ef12da55"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60723/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60723/hub/session/c5ad4db0-57fd-4838-a360-dfe167f98db5/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "c5ad4db0-57fd-4838-a360-dfe167f98db5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60723/hub/session/c5ad4db0-57fd-4838-a360-dfe167f98db5 {"sessionId": "c5ad4db0-57fd-4838-a360-dfe167f98db5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60762/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60762/hub/session/765ae5fc-d9e9-47a6-bfd0-167771c03763/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "765ae5fc-d9e9-47a6-bfd0-167771c03763"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60762/hub/session/765ae5fc-d9e9-47a6-bfd0-167771c03763 {"sessionId": "765ae5fc-d9e9-47a6-bfd0-167771c03763"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:django.request:Internal Server Error: /caching/
+Traceback (most recent call last):
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\DanceDirectCache\ddCache\caching\views\view_cash.py", line 80, in catche_DD
+    return render(request, 'blog/post_list.html', {})
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: blog/post_list.html
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 14:02:59.804000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60828/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60828/hub/session/9e6b9690-6706-4ce1-b61c-1a52cf0be8d9/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "9e6b9690-6706-4ce1-b61c-1a52cf0be8d9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60828/hub/session/9e6b9690-6706-4ce1-b61c-1a52cf0be8d9 {"sessionId": "9e6b9690-6706-4ce1-b61c-1a52cf0be8d9"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60867/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60867/hub/session/ecc83d3c-2388-4977-8b5c-423d85edf1f5/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "ecc83d3c-2388-4977-8b5c-423d85edf1f5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60867/hub/session/ecc83d3c-2388-4977-8b5c-423d85edf1f5 {"sessionId": "ecc83d3c-2388-4977-8b5c-423d85edf1f5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60905/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60905/hub/session/7026b8ec-8d20-4f6c-9e49-51cf3aa4683c/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "7026b8ec-8d20-4f6c-9e49-51cf3aa4683c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60905/hub/session/7026b8ec-8d20-4f6c-9e49-51cf3aa4683c {"sessionId": "7026b8ec-8d20-4f6c-9e49-51cf3aa4683c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60944/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60944/hub/session/f5088998-95ff-411b-8e1f-785cd7d12dd6/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "f5088998-95ff-411b-8e1f-785cd7d12dd6"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60944/hub/session/f5088998-95ff-411b-8e1f-785cd7d12dd6 {"sessionId": "f5088998-95ff-411b-8e1f-785cd7d12dd6"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60985/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60985/hub/session/9bd36839-80c6-4c26-8b0f-4e295c0b3588/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "9bd36839-80c6-4c26-8b0f-4e295c0b3588"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60985/hub/session/9bd36839-80c6-4c26-8b0f-4e295c0b3588 {"sessionId": "9bd36839-80c6-4c26-8b0f-4e295c0b3588"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:django.request:Internal Server Error: /caching/
+Traceback (most recent call last):
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\DanceDirectCache\ddCache\caching\views\view_cash.py", line 80, in catche_DD
+    return render(request, 'caching/Get_url.html', {})
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: caching/Get_url.html
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 14:07:56.963000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61051/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61051/hub/session/284c66af-5026-489d-8829-a696f5a329bb/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "284c66af-5026-489d-8829-a696f5a329bb"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61051/hub/session/284c66af-5026-489d-8829-a696f5a329bb {"sessionId": "284c66af-5026-489d-8829-a696f5a329bb"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61092/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61092/hub/session/2fd4fb5b-0abc-4554-aa92-d711570d7a11/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "2fd4fb5b-0abc-4554-aa92-d711570d7a11"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61092/hub/session/2fd4fb5b-0abc-4554-aa92-d711570d7a11 {"sessionId": "2fd4fb5b-0abc-4554-aa92-d711570d7a11"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61130/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61130/hub/session/9d94c6d2-bf21-4bbe-88c9-61434b20aab7/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "9d94c6d2-bf21-4bbe-88c9-61434b20aab7"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61130/hub/session/9d94c6d2-bf21-4bbe-88c9-61434b20aab7 {"sessionId": "9d94c6d2-bf21-4bbe-88c9-61434b20aab7"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61167/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61167/hub/session/d5fdf3c2-1414-488d-8961-034383c28e99/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "d5fdf3c2-1414-488d-8961-034383c28e99"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61167/hub/session/d5fdf3c2-1414-488d-8961-034383c28e99 {"sessionId": "d5fdf3c2-1414-488d-8961-034383c28e99"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61209/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61209/hub/session/83cb44e5-b546-49cd-9d2b-4dddf334ec65/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "83cb44e5-b546-49cd-9d2b-4dddf334ec65"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61209/hub/session/83cb44e5-b546-49cd-9d2b-4dddf334ec65 {"sessionId": "83cb44e5-b546-49cd-9d2b-4dddf334ec65"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 14:08:41.222000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61253/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61253/hub/session/14c2e11c-0db0-4436-923a-1761b82874b8/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "14c2e11c-0db0-4436-923a-1761b82874b8"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61253/hub/session/14c2e11c-0db0-4436-923a-1761b82874b8 {"sessionId": "14c2e11c-0db0-4436-923a-1761b82874b8"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61296/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61296/hub/session/be8b7d66-ffb3-4aac-8ea6-1bda740b0c0c/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "be8b7d66-ffb3-4aac-8ea6-1bda740b0c0c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61296/hub/session/be8b7d66-ffb3-4aac-8ea6-1bda740b0c0c {"sessionId": "be8b7d66-ffb3-4aac-8ea6-1bda740b0c0c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61332/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61332/hub/session/4029497e-e43f-45ee-9f5e-edbd5394b48c/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "4029497e-e43f-45ee-9f5e-edbd5394b48c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61332/hub/session/4029497e-e43f-45ee-9f5e-edbd5394b48c {"sessionId": "4029497e-e43f-45ee-9f5e-edbd5394b48c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61369/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61369/hub/session/79eb9b71-492a-407b-9760-b17d500b8268/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "79eb9b71-492a-407b-9760-b17d500b8268"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61369/hub/session/79eb9b71-492a-407b-9760-b17d500b8268 {"sessionId": "79eb9b71-492a-407b-9760-b17d500b8268"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61409/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61409/hub/session/6fa281d8-1c09-413f-864b-c6e1f4b63de7/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "6fa281d8-1c09-413f-864b-c6e1f4b63de7"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:61409/hub/session/6fa281d8-1c09-413f-864b-c6e1f4b63de7 {"sessionId": "6fa281d8-1c09-413f-864b-c6e1f4b63de7"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 15:24:33.482000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63834/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63834/hub/session/44590dac-8ac0-4220-b1fc-b8c30c2a187b/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "44590dac-8ac0-4220-b1fc-b8c30c2a187b"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63834/hub/session/44590dac-8ac0-4220-b1fc-b8c30c2a187b {"sessionId": "44590dac-8ac0-4220-b1fc-b8c30c2a187b"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63875/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63875/hub/session/03acb441-958f-4224-9e97-a752ebe1f0f0/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "03acb441-958f-4224-9e97-a752ebe1f0f0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63875/hub/session/03acb441-958f-4224-9e97-a752ebe1f0f0 {"sessionId": "03acb441-958f-4224-9e97-a752ebe1f0f0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63913/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63913/hub/session/8b04f560-ed45-4e9c-80cf-37aed53c3b2b/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "8b04f560-ed45-4e9c-80cf-37aed53c3b2b"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63913/hub/session/8b04f560-ed45-4e9c-80cf-37aed53c3b2b {"sessionId": "8b04f560-ed45-4e9c-80cf-37aed53c3b2b"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63949/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63949/hub/session/2cfe33a0-04ff-42a7-bd89-9216b3fd3893/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "2cfe33a0-04ff-42a7-bd89-9216b3fd3893"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63949/hub/session/2cfe33a0-04ff-42a7-bd89-9216b3fd3893 {"sessionId": "2cfe33a0-04ff-42a7-bd89-9216b3fd3893"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63990/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:63990/hub/session/37759883-0307-4aa8-8f74-3fea8e6e5ada/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "37759883-0307-4aa8-8f74-3fea8e6e5ada"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:63990/hub/session/37759883-0307-4aa8-8f74-3fea8e6e5ada {"sessionId": "37759883-0307-4aa8-8f74-3fea8e6e5ada"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:django.request:Internal Server Error: /caching/
+Traceback (most recent call last):
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\DanceDirectCache\ddCache\caching\views\view_cash.py", line 80, in catche_DD
+    return render(request, 'Get_url.html', {outputFileName})
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\backends\django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loaders\base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 5: 'outputFileName'. Did you forget to register or load this tag?
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 15:41:47.721000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49423/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49423/hub/session/7d64a60a-d509-4967-9ecc-b1114935187f/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "7d64a60a-d509-4967-9ecc-b1114935187f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49423/hub/session/7d64a60a-d509-4967-9ecc-b1114935187f {"sessionId": "7d64a60a-d509-4967-9ecc-b1114935187f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49461/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49461/hub/session/cac3dcf7-6b51-4182-98cd-5c74f28b760d/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "cac3dcf7-6b51-4182-98cd-5c74f28b760d"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49461/hub/session/cac3dcf7-6b51-4182-98cd-5c74f28b760d {"sessionId": "cac3dcf7-6b51-4182-98cd-5c74f28b760d"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49499/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49499/hub/session/b5ea294e-282f-4c1c-92fa-73aa8d8944f6/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "b5ea294e-282f-4c1c-92fa-73aa8d8944f6"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49499/hub/session/b5ea294e-282f-4c1c-92fa-73aa8d8944f6 {"sessionId": "b5ea294e-282f-4c1c-92fa-73aa8d8944f6"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49536/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49536/hub/session/ffc89d68-edd2-48ec-b375-f19e8c1503ad/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "ffc89d68-edd2-48ec-b375-f19e8c1503ad"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49536/hub/session/ffc89d68-edd2-48ec-b375-f19e8c1503ad {"sessionId": "ffc89d68-edd2-48ec-b375-f19e8c1503ad"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49575/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49575/hub/session/829544b6-6727-4fc5-bc38-18aba202edce/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "829544b6-6727-4fc5-bc38-18aba202edce"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49575/hub/session/829544b6-6727-4fc5-bc38-18aba202edce {"sessionId": "829544b6-6727-4fc5-bc38-18aba202edce"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 15:42:28.750000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49618/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49618/hub/session/c206d91e-f1a6-4f41-8ea3-03622b87ef5c/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "c206d91e-f1a6-4f41-8ea3-03622b87ef5c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49618/hub/session/c206d91e-f1a6-4f41-8ea3-03622b87ef5c {"sessionId": "c206d91e-f1a6-4f41-8ea3-03622b87ef5c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49657/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49657/hub/session/f1a8a337-0328-4d64-8a77-5345d13fe558/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "f1a8a337-0328-4d64-8a77-5345d13fe558"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49657/hub/session/f1a8a337-0328-4d64-8a77-5345d13fe558 {"sessionId": "f1a8a337-0328-4d64-8a77-5345d13fe558"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49702/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49702/hub/session/04f058b5-350d-4bec-8450-3cf80944c368/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "04f058b5-350d-4bec-8450-3cf80944c368"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49702/hub/session/04f058b5-350d-4bec-8450-3cf80944c368 {"sessionId": "04f058b5-350d-4bec-8450-3cf80944c368"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49741/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49741/hub/session/0a2d8036-f4d8-4c22-a148-ce2344f89d01/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "0a2d8036-f4d8-4c22-a148-ce2344f89d01"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49741/hub/session/0a2d8036-f4d8-4c22-a148-ce2344f89d01 {"sessionId": "0a2d8036-f4d8-4c22-a148-ce2344f89d01"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49782/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49782/hub/session/0b7c9669-45ef-402e-a529-057c6cb70032/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "0b7c9669-45ef-402e-a529-057c6cb70032"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49782/hub/session/0b7c9669-45ef-402e-a529-057c6cb70032 {"sessionId": "0b7c9669-45ef-402e-a529-057c6cb70032"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 15:43:07.656000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49822/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49822/hub/session/527d40b3-3ddb-4282-9a8d-262af30d820f/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "527d40b3-3ddb-4282-9a8d-262af30d820f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49822/hub/session/527d40b3-3ddb-4282-9a8d-262af30d820f {"sessionId": "527d40b3-3ddb-4282-9a8d-262af30d820f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49860/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49860/hub/session/a2df9e9a-8b3a-4462-89c6-c5d0b5bcf9ee/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "a2df9e9a-8b3a-4462-89c6-c5d0b5bcf9ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49860/hub/session/a2df9e9a-8b3a-4462-89c6-c5d0b5bcf9ee {"sessionId": "a2df9e9a-8b3a-4462-89c6-c5d0b5bcf9ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49897/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49897/hub/session/13643986-c795-49af-9c7f-8efbee2c7554/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "13643986-c795-49af-9c7f-8efbee2c7554"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49897/hub/session/13643986-c795-49af-9c7f-8efbee2c7554 {"sessionId": "13643986-c795-49af-9c7f-8efbee2c7554"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49935/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49935/hub/session/cbeba5e1-f1e1-42fc-a25f-4784e378403c/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "cbeba5e1-f1e1-42fc-a25f-4784e378403c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49935/hub/session/cbeba5e1-f1e1-42fc-a25f-4784e378403c {"sessionId": "cbeba5e1-f1e1-42fc-a25f-4784e378403c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49981/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:49981/hub/session/492baa63-4419-46ee-b4af-9bcf0b3a63a4/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "492baa63-4419-46ee-b4af-9bcf0b3a63a4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:49981/hub/session/492baa63-4419-46ee-b4af-9bcf0b3a63a4 {"sessionId": "492baa63-4419-46ee-b4af-9bcf0b3a63a4"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 15:43:45.667000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50022/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50022/hub/session/117d1552-4f83-4204-98ee-58c17bc28980/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "117d1552-4f83-4204-98ee-58c17bc28980"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50022/hub/session/117d1552-4f83-4204-98ee-58c17bc28980 {"sessionId": "117d1552-4f83-4204-98ee-58c17bc28980"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 16:22:32.880000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50319/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50319/hub/session/1ba26317-bef8-426b-aedb-50293df1e81f/url {"url": "https://www.dancedirect.com/uk/delivery", "sessionId": "1ba26317-bef8-426b-aedb-50293df1e81f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50319/hub/session/1ba26317-bef8-426b-aedb-50293df1e81f {"sessionId": "1ba26317-bef8-426b-aedb-50293df1e81f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50358/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50358/hub/session/ccaa5b57-ebb2-4029-b741-db102436e299/url {"url": "https://www.dancedirect.com/uk/returns", "sessionId": "ccaa5b57-ebb2-4029-b741-db102436e299"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50358/hub/session/ccaa5b57-ebb2-4029-b741-db102436e299 {"sessionId": "ccaa5b57-ebb2-4029-b741-db102436e299"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50399/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50399/hub/session/05252c4d-7d15-45bc-8e54-6a6eacb26e88/url {"url": "https://www.dancedirect.com/uk/terms-conditions", "sessionId": "05252c4d-7d15-45bc-8e54-6a6eacb26e88"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50399/hub/session/05252c4d-7d15-45bc-8e54-6a6eacb26e88 {"sessionId": "05252c4d-7d15-45bc-8e54-6a6eacb26e88"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50440/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50440/hub/session/8957167f-c473-466c-8483-fbea978f15cf/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "8957167f-c473-466c-8483-fbea978f15cf"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50440/hub/session/8957167f-c473-466c-8483-fbea978f15cf {"sessionId": "8957167f-c473-466c-8483-fbea978f15cf"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50478/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50478/hub/session/852e73ce-70a9-499f-b743-98dcb27f920a/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "852e73ce-70a9-499f-b743-98dcb27f920a"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50478/hub/session/852e73ce-70a9-499f-b743-98dcb27f920a {"sessionId": "852e73ce-70a9-499f-b743-98dcb27f920a"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:django.request:Internal Server Error: /caching/
+Traceback (most recent call last):
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\DanceDirectCache\ddCache\caching\views\view_cash.py", line 80, in catche_DD
+    return render(request, 'Get_url.html', {outputFileName})
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\backends\django.py", line 92, in render
+    context = make_context(context, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\context.py", line 291, in make_context
+    context.push(original_context)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\context.py", line 61, in push
+    return ContextDict(self, *dicts, **kwargs)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\template\context.py", line 20, in __init__
+    super(ContextDict, self).__init__(*args, **kwargs)
+ValueError: dictionary update sequence element #0 has length 26; 2 is required
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-21 16:24:33.264000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50533/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50533/hub/session/c445f598-ac0e-4975-b4ae-34656076afda/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "c445f598-ac0e-4975-b4ae-34656076afda"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50533/hub/session/c445f598-ac0e-4975-b4ae-34656076afda {"sessionId": "c445f598-ac0e-4975-b4ae-34656076afda"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50574/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:50574/hub/session/f08bf903-c2e5-45b8-ba92-c0810d91a9ee/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "f08bf903-c2e5-45b8-ba92-c0810d91a9ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:50574/hub/session/f08bf903-c2e5-45b8-ba92-c0810d91a9ee {"sessionId": "f08bf903-c2e5-45b8-ba92-c0810d91a9ee"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 10:38:05.839000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56130/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56130/hub/session/7afc7dea-d15a-425a-a6d0-a07f30ed2d85/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "7afc7dea-d15a-425a-a6d0-a07f30ed2d85"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:56130/hub/session/7afc7dea-d15a-425a-a6d0-a07f30ed2d85 {"sessionId": "7afc7dea-d15a-425a-a6d0-a07f30ed2d85"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56170/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56170/hub/session/bbe015df-8db3-4091-acbf-6d70fec2d57d/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "bbe015df-8db3-4091-acbf-6d70fec2d57d"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:56170/hub/session/bbe015df-8db3-4091-acbf-6d70fec2d57d {"sessionId": "bbe015df-8db3-4091-acbf-6d70fec2d57d"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 10:44:06.642000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52336/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52336/hub/session/ebf39954-c8c4-4bc3-97bf-9a7c9dcb834e/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "ebf39954-c8c4-4bc3-97bf-9a7c9dcb834e"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52336/hub/session/ebf39954-c8c4-4bc3-97bf-9a7c9dcb834e {"sessionId": "ebf39954-c8c4-4bc3-97bf-9a7c9dcb834e"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52374/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52374/hub/session/3ca52a64-21f7-4533-9857-9cab48f130f3/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "3ca52a64-21f7-4533-9857-9cab48f130f3"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52374/hub/session/3ca52a64-21f7-4533-9857-9cab48f130f3 {"sessionId": "3ca52a64-21f7-4533-9857-9cab48f130f3"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 10:46:37.207000
+ERROR:django.request:Internal Server Error: /caching/
+Traceback (most recent call last):
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\DanceDirectCache\myVen\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\DanceDirectCache\ddCache\caching\views\view_cash.py", line 50, in catche_DD
+    print "caching:" + C
+NameError: global name 'C' is not defined
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 10:47:14.072000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52431/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52431/hub/session/3b842c82-7982-486c-9dd0-90141a1b2ed2/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "3b842c82-7982-486c-9dd0-90141a1b2ed2"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52431/hub/session/3b842c82-7982-486c-9dd0-90141a1b2ed2 {"sessionId": "3b842c82-7982-486c-9dd0-90141a1b2ed2"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52472/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:52472/hub/session/0d0472cb-bfc1-456a-b4a9-fb9c6bbb5c36/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "0d0472cb-bfc1-456a-b4a9-fb9c6bbb5c36"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:52472/hub/session/0d0472cb-bfc1-456a-b4a9-fb9c6bbb5c36 {"sessionId": "0d0472cb-bfc1-456a-b4a9-fb9c6bbb5c36"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 10:55:02.102000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64766/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64766/hub/session/8508a7f7-57a8-4634-8a36-74d3c74e6de3/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "8508a7f7-57a8-4634-8a36-74d3c74e6de3"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64766/hub/session/8508a7f7-57a8-4634-8a36-74d3c74e6de3 {"sessionId": "8508a7f7-57a8-4634-8a36-74d3c74e6de3"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64807/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64807/hub/session/788c29e8-7080-4155-9c40-fb878acee41a/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "788c29e8-7080-4155-9c40-fb878acee41a"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64807/hub/session/788c29e8-7080-4155-9c40-fb878acee41a {"sessionId": "788c29e8-7080-4155-9c40-fb878acee41a"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 11:08:07.939000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64990/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64990/hub/session/553ebe84-8675-4050-80e4-133539e84e30/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "553ebe84-8675-4050-80e4-133539e84e30"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64990/hub/session/553ebe84-8675-4050-80e4-133539e84e30 {"sessionId": "553ebe84-8675-4050-80e4-133539e84e30"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-22 11:26:53.076000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65198/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65198/hub/session/0e217e76-12c0-48fe-9bda-2621c38ac327/url {"url": "https://www.dancedirect.com/uk/about-us", "sessionId": "0e217e76-12c0-48fe-9bda-2621c38ac327"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:65198/hub/session/0e217e76-12c0-48fe-9bda-2621c38ac327 {"sessionId": "0e217e76-12c0-48fe-9bda-2621c38ac327"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65236/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:65236/hub/session/5796347f-370f-4882-9c5e-98c0965e9520/url {"url": "https://www.dancedirect.com/uk/careers", "sessionId": "5796347f-370f-4882-9c5e-98c0965e9520"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:65236/hub/session/5796347f-370f-4882-9c5e-98c0965e9520 {"sessionId": "5796347f-370f-4882-9c5e-98c0965e9520"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-25 11:12:27.932000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57431/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57431/hub/session/376ad716-fe25-49ab-9b8d-f0c28efd15e5/url {"url": "https://www.dancedirect.com/uk/dance-shoes/contemporary-dance-shoes", "sessionId": "376ad716-fe25-49ab-9b8d-f0c28efd15e5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:57431/hub/session/376ad716-fe25-49ab-9b8d-f0c28efd15e5 {"sessionId": "376ad716-fe25-49ab-9b8d-f0c28efd15e5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57473/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57473/hub/session/875c0536-d9b5-4de5-acc6-8aebd2cf5448/url {"url": "https://www.dancedirect.com/uk/brands/wear-moi", "sessionId": "875c0536-d9b5-4de5-acc6-8aebd2cf5448"}
+INFO:root:Page cashing time log, testing date:
+INFO:root:2016-04-25 11:39:40.868000
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:59980/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:59980/hub/session/3bab518a-c5e7-4593-b1cf-649da41828ba/url {"url": "https://www.dancedirect.com/uk/dance-shoes/contemporary-dance-shoes", "sessionId": "3bab518a-c5e7-4593-b1cf-649da41828ba"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:59980/hub/session/3bab518a-c5e7-4593-b1cf-649da41828ba {"sessionId": "3bab518a-c5e7-4593-b1cf-649da41828ba"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60021/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}

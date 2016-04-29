@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+{% for post in reviews %}
+
+<div class="post">
+	<div class="CharField">
+		Username:  {{ post.username }}
+	</div>
+	<br>
+	<div>
+		Rating:  {{ post.rating }} out of 5
+	</div>
+	<br>
+	
+	<div class="TextField">
+	Note: 	{{ post.note }}
+	</div>
+	<br>
+	<div>    CompanyID:            {{ post.companyid }}</div>
+	<br>
+	<div>    SourceID:            {{ post.sourceid }}</div>
+</div>
+<br>
+<div style="border-top:1px solid #CCF8F8; width:100%;"></div>
+<br>
+
+{% endfor %}
+{% endblock content %}

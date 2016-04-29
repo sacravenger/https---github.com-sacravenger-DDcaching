@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Catching</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+</br>
+</br>
+
+<form action="#" method="get">
+<div class="container">
+
+			<div class="form-group">
+				<h2><span class="label label-default">Please enter the URL of sitmap.xml of dance direct </span></h2>
+</br>
+		 <input type="text" value="https://www.dancedirect.com/sitemaps/dduk/sitemap.xml" name="mytextbox"  class="form-control input-lg"/>
+</br>
+		 <input type="submit" class="btn btn-default btn-lg" value="Run web cache" name="mybtn">
+	 </div>
+   <div class="form-group">
+    <h3> <label for="comment">Realtime Results:</label> </h3>
+     <textarea class="form-control" rows="5" id="comment"></textarea>
+   </div>
+ </form>
+</div>
+
+ <input hidden type='text' name='user' id ="UUID" value={{SocketUrl}}></input>
+<script>
+var x = document.getElementById('UUID').value
+// Note that the path doesn't matter for routing; any WebSocket
+// connection gets bumped over to WebSocket consumers
+socket = new WebSocket(x);
+socket.onmessage = function(e) {
+    //alert(e.data);
+    document.getElementById('comment').value = document.getElementById('comment').value + e.data;
+}
+
+
+
+</script>
+
+</body>
